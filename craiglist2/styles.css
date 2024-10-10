@@ -163,7 +163,31 @@ a {
         font-size: 20px;
         font-weight: 900;
 
+    animation:  
+    nudge 10s linear infinite;
     }
+    @keyframes nudge {
+        0% {
+            transform: translateX(0); 
+        }
+        25% {
+            transform: translateX(100px); 
+        }
+        50% {
+            transform: translateX(0); 
+        }
+
+        75%{
+            transform: translateX(-100px);
+        }
+        
+        100%{
+
+            transform: translateX(0px); 
+
+        }
+    }
+    
 
     .banner{
         padding: 9px;
