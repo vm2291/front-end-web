@@ -43,12 +43,14 @@ a {
     align-items: center;
     margin-right: 15px;
 }
-.icon-text a{
-    color:white;
-}
 
 .icon-text:last-child {
     margin-right: 0px;
+
+}
+
+.icon-text a{
+    color:white;
 }
 .icon-text i {
     margin-right: 5px;
