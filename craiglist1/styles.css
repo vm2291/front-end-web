@@ -27,6 +27,10 @@ a {
     margin: 0 15px;
 }
 
+.nav-links a:hover {
+    text-decoration: underline;
+  }
+
 .right-side {
     display: flex;
     align-items: center;
