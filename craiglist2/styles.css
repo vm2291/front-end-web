@@ -96,9 +96,13 @@ a {
     .icon-text i {
         margin-right: 4px;
     }
+
+    .icon-text a {
+        font-size: 15px;
+    }
  
 }
-@media (max-width: 665px) { 
+@media (max-width: 675px) { 
     .nav-menu {
         flex-direction: column;
         padding: 11px 32px;
@@ -119,7 +123,7 @@ a {
     .nav-links a {
         margin: 3px 0px; 
         padding: 6px;
-        border: 1.8px solid black;
+        border: 1.5px solid black;
         font-size: 15px;
     }
 
