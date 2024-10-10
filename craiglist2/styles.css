@@ -1,0 +1,148 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-bottom: 1px solid black;
+}
+
+.left-side h2 {
+    margin: 0;
+}
+
+.nav-links a {
+    margin: 0 15px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icon-text:last-child {
+    margin-right: 0px;
+}
+.icon-text i {
+    margin-right: 5px;
+}
+
+.banner {
+    text-align: center;
+    padding: 59px;
+    border: 1px solid black;
+    margin: 32px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 100px 10px;
+}
+
+.recommendations {
+    padding: 15px 25px 25px 25px;
+    margin: 32px;
+    border: 1px solid black;
+}
+
+.box {
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1035px) { 
+    .nav-menu {
+        padding: 20px; 
+    }
+    .left-side h2 {
+        font-size: 20px;
+        font-weight: 900;
+
+    }
+
+    .nav-links a {
+        margin: 0px 4px; 
+        font-size: 14px;
+    }
+
+    .icon-text {
+        margin: 0px 5px;
+       
+    }
+    .icon-text:first-child{
+        margin-left: 0px;
+    }
+
+    .icon-text i {
+        margin-right: 4px;
+    }
+ 
+}
+@media (max-width: 665px) { 
+    .nav-menu {
+        flex-direction: column;
+        padding: 11px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+
+    }
+
+    .nav-links a {
+        margin: 3px 0px; 
+        padding: 6px;
+        border: 1.8px solid black;
+        font-size: 15px;
+    }
+
+
+    .icon-text {
+        margin: 0px 10px;
+       
+    }
+    .banner h1 {
+        font-size: 1.5rem; 
+    }
+
+    .box {
+        height: 100px; 
+    }
+
+    .left-side h2 {
+        font-size: 20px;
+        font-weight: 900;
+
+    }
+
+    .banner{
+        padding: 9px;
+    }
+}
