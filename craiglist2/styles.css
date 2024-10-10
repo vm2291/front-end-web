@@ -113,7 +113,7 @@ a {
     }
 
     .icon-text a {
-        font-size: 14px;
+        font-size: 15px;
     }
  
 }
@@ -137,9 +137,10 @@ a {
 
     .nav-links a {
         margin: 3px 0px; 
-        padding: 6px;
-        border: 1.5px solid white;
-        font-size: 15px;
+        padding: 6.5px;
+        background-color: white;
+        font-size: 16px;
+        color: #161616;
     }
 
     .nav-links a:hover {
@@ -164,21 +165,21 @@ a {
         font-weight: 900;
 
     animation:  
-    nudge 10s linear infinite;
+    nudge 8s linear infinite;
     }
     @keyframes nudge {
         0% {
             transform: translateX(0); 
         }
         25% {
-            transform: translateX(100px); 
+            transform: translateX(60px); 
         }
         50% {
             transform: translateX(0); 
         }
 
         75%{
-            transform: translateX(-100px);
+            transform: translateX(-60px);
         }
         
         100%{
