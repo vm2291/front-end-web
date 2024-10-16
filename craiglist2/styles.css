@@ -64,18 +64,23 @@ a {
 }
 
 .banner {
-    text-align: center;
-    padding: 7rem 5rem;
-    border: 1px solid black;
+    padding: 7rem 2rem;
     color: white;
-    background-position: center;
     background-color: #102757;
+    display: flex;
+    justify-content: space-between;
 }
 
-.banner h1 {
-    font-size: 3rem;
-    margin: 100px 10px;
+.left-side-banner{
+    
 }
+
+.banner-pic{
+    border: 2px solid red;
+    padding: 1rem 12rem;
+    display: inline-block;
+}
+
 
 .recommendations {
     padding: 15px 25px 25px 25px;
