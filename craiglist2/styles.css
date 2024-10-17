@@ -263,16 +263,6 @@ a {
     font-size: 1rem;
 }
 
-@media (max-width: 690px) {
-    .recommendation-card {
-        width: 83%;
-        margin: 0 auto;
-    }
-}
-
-
-
-
 
 
 
@@ -393,5 +383,9 @@ a {
         display: none; 
     }
 
+    .recommendation-card {
+        width: 83%;
+        margin: 0 auto;
+    }
   
 }
