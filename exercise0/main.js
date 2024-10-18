@@ -1,14 +1,22 @@
-let maxNum=10;
 
 function squares(val){
-    for(let i=1; i<=val; i++) {
-       displayText.innerHTML += `
-       <p> The square of i is: (i*i) 
-       </p>`;
+
+    for(let i = 1; i <= val; i++){
+  
+      displayText.innerHTML += `
+        <p>
+          The square of ${i} is: ${i * i}.
+        </p>
+      `;
+  
     }
-};
+  
+  };
+  
+  goButton.onclick = function(){
+    squares(maxNumInput.value);
+  };
 
-goButton.onclick=function(){
-    squares(maxNum);
-};
-
+  clearButton.onclick = function(){
+    
+  }
