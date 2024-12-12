@@ -1,0 +1,37 @@
+<script>
+
+    async function searchCraigslist(querystring, categoryCode = 'ela') {
+      const url = 'https://craigslist-data.p.rapidapi.com/search';
+      const options = {
+        method: 'POST',
+        headers: {
+          'x-rapidapi-key': 'fbb7861ee8msh534d374fec5fb61p1f2ff4jsnf19939d246b4',
+          'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: querystring,
+          gl: 'newyork',
+          hl: 'en',
+          has_pic: false,
+          posted_today: false,
+          show_duplicates: false,
+          search_title_only: false,
+          search_distance: 0,
+          page: 0,
+          category: categoryCode,
+        }),
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        console.log(result);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    searchCraigslist("playstation");
+    
+  </script>

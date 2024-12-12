@@ -110,7 +110,7 @@ a {
 }
 
 .btn {
-    background-color: #3b7db5;
+    background-color: #6A2983;
     border: none;
     color: white;
     box-sizing: border-box;
@@ -120,7 +120,7 @@ a {
 }
 
 .btn:hover {
-    background-color: #4B9FE1;
+    background-color: #800080;
 }
 
 .input-group img.icon {
@@ -221,7 +221,7 @@ a {
 }
 
 .read-more-btn {
-    background-color: #4B9FE1;
+    background-color: #6A2983;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -233,7 +233,7 @@ a {
 }
 
 .read-more-btn:hover {
-    background-color: #3b7db5;
+    background-color: #800080;
 }
 
 .see-more {
@@ -255,7 +255,7 @@ a {
 }
 
 .see-more button:hover {
-    background-color: #4B9FE1;
+    background-color: #800080;
 }
 
 .footer {
