@@ -72,7 +72,6 @@ const Sidebar = () => {
           <div className="filter-section more-filters">
             <p>More filters</p>
           </div>
-          <hr />
         </div>
 
         <div className="categories">

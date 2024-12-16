@@ -11,14 +11,19 @@
     padding: 1rem;
     border-right: 1px solid #e0e0e0;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
   
-  /* Section Titles */
+ 
   h3 {
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
     color: #102757;
     font-weight: bold;
+    margin-top: 0.6rem;
+  
   }
   
   hr {
@@ -31,6 +36,27 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+.filter-section span {
+    font-size: 1rem;
+    line-height: 1; 
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    cursor: pointer;
+}
+
   
   .price-inputs {
     margin-top: 0.5rem;
@@ -54,9 +80,10 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.7rem 0.75rem;
     border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 7px;
   }
   
   .sidebar-item:hover {
@@ -85,7 +112,6 @@
     text-decoration: underline;
   }
   
-  /* Toggle Button */
   .sidebar-toggle-btn {
     display: none;
     background-color: #e0dfdf;
@@ -101,7 +127,6 @@
     background-color: #d5d5d5;
   }
   
-  /* Close Button */
   .sidebar-close-btn {
     display: block;
     background: none;
@@ -114,12 +139,10 @@
     cursor: pointer;
   }
   
-  /* Mobile Sidebar */
   @media (max-width: 770px) {
     .sidebar {
       position: fixed;
       left: -100%;
-      top: 171px;
       width: 250px;
       height: calc(100% - 220px);
       transition: left 0.3s ease-in-out;
