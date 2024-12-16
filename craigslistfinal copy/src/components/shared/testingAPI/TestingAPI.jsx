@@ -3,8 +3,8 @@ import saveIcon from "../../../assets/home/saveIcon.svg";
 import "./TestingAPI.css";
 
 const TestingAPI = () => {
-  const [data, setData] = useState([]); // Array for product data
-  const [detailedData, setDetailedData] = useState([]); // Array for detailed product data
+  const [data, setData] = useState([]); 
+  const [detailedData, setDetailedData] = useState([]); 
   const [loading, setLoading] = useState(true);
 
   const fetchDetailedData = async (url) => {
@@ -58,23 +58,23 @@ const TestingAPI = () => {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      console.log("Fetched data:", result); // Log the fetched data
+      console.log("Fetched data:", result);
 
       if (result && result.data && result.data.length > 0) {
-        const products = result.data.slice(0, 3); // Get only the first 3 products
-        setData(products); // Set the product data
+        const products = result.data.slice(0, 3); 
+        setData(products); 
 
-        // Fetch detailed data for each product
+    
         const detailedProducts = await Promise.all(
           products.map(async (item) => {
             if (item.url) {
               return await fetchDetailedData(item.url);
             }
-            return null; // Return null if no URL
+            return null; 
           })
         );
 
-        setDetailedData(detailedProducts); // Set the detailed data
+        setDetailedData(detailedProducts); 
       }
       setLoading(false);
     } catch (error) {
