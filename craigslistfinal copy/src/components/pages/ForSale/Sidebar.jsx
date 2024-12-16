@@ -16,6 +16,7 @@ const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
+  const closeSidebar = () => setIsSidebarOpen(false);
 
   const categories = [
     { name: "Today's picks", icon: random },
@@ -32,12 +33,21 @@ const Sidebar = () => {
   return (
     <>
       {/* Toggle Button for Mobile */}
-      <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
-        Filters & Categories
-      </button>
+      {!isSidebarOpen && (
+        <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
+          Filters & Categories
+        </button>
+      )}
 
       {/* Sidebar */}
       <div className={`sidebar ${isSidebarOpen ? "active" : ""}`}>
+        {/* Close Button */}
+        {isSidebarOpen && (
+          <button className="sidebar-close-btn" onClick={closeSidebar}>
+            ×
+          </button>
+        )}
+
         <div className="filters">
           <h3>Filters</h3>
           <hr />
@@ -81,6 +91,12 @@ const Sidebar = () => {
                   src={category.icon}
                   alt={category.name}
                   className="sidebar-icon"
+                  style={{
+                    filter:
+                      selectedCategory === category.name
+                        ? "brightness(0) invert(1)"
+                        : "none",
+                  }}
                 />
                 <span>{category.name}</span>
               </li>

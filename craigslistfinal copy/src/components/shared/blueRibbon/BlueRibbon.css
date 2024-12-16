@@ -1,4 +1,3 @@
-/* Blue Ribbon Container */
 .blue-ribbon {
     background-color: #102757;
     color: white;
@@ -12,10 +11,9 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap; 
 }
 
-/* Flex container for top elements */
 .blue-ribbon-top {
     display: flex;
     justify-content: space-between;
@@ -83,11 +81,11 @@
 
 /* -------- RESPONSIVENESS -------- */
 
-/* For screens smaller than 770px: hide Post an Ad */
 @media (max-width: 770px) {
     .blue-ribbon {
         flex-direction: column;
-        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         gap: 0.5rem;
     }
 
@@ -99,16 +97,17 @@
     }
 
     .post-ad {
-        display: none; /* Hide Post an Ad */
+        display: none; 
     }
-
+    .location{
+        display: none;
+    }
     .search-bar {
         width: 100%;
         margin: 0;
     }
 }
 
-/* For larger screens (above 770px): General layout */
 @media (min-width: 770px) {
     .blue-ribbon {
         flex-direction: row;
