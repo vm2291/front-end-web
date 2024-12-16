@@ -104,8 +104,9 @@
     margin-top: 1rem;
     text-align: center;
     color: #112757;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+    margin-left: -2.5rem;
   }
   
   .view-all:hover {
