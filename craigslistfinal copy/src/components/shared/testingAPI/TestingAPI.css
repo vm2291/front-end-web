@@ -26,8 +26,8 @@
     display: inline-block;
     min-width: 260px !important;
     max-width: 260px!important;
-    min-height: 330px;
-    max-height: 330px;
+    min-height: 337px;
+    max-height: 337px;
     text-align: left;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;

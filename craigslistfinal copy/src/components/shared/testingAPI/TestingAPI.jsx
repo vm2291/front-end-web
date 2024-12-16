@@ -12,7 +12,7 @@ const TestingAPI = () => {
     const options = {
       method: "GET",
       headers: {
- 		'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f38994',
+        'x-rapidapi-key': '5685d9df4amsh46f0e471702cd4ap19b114jsn5684ad429f02',
 		'x-rapidapi-host': 'craigslist5.p.rapidapi.com'
       },
     };
@@ -32,12 +32,12 @@ const TestingAPI = () => {
     const options = {
       method: "POST",
       headers: {
-        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f38994',
-        'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
-        'Content-Type': 'application/json'      
+        'x-rapidapi-key': '5685d9df4amsh46f0e471702cd4ap19b114jsn5684ad429f02',
+		'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
+		'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        query: "general",
+        query: "appliances",
         gl: "newyork",
         hl: "en",
         has_pic: true,
@@ -61,7 +61,7 @@ const TestingAPI = () => {
       console.log("Fetched data:", result);
 
       if (result && result.data && result.data.length > 0) {
-        const products = result.data.slice(0, 3); 
+        const products = result.data.slice(0, 7); 
         setData(products); 
 
     
