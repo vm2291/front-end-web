@@ -1,0 +1,167 @@
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.footer {
+  background-color: #0C1831;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2.5rem;
+  font-size: 14.5px;
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0;
+  gap: 0rem;
+  padding-bottom: 1.5rem;
+  
+}
+
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0rem;
+  padding: 0rem;
+  gap:1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  padding: 0rem;
+  max-width: 103px;
+
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #6A2983;
+}
+
+
+.footer-columns {
+  display: flex;
+  gap: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-columns h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-columns ul li {
+  margin-bottom: 17px;
+  cursor: pointer;
+  padding:0rem;
+  margin-right:0rem;
+
+}
+
+.footer-columns ul li:last-child{
+  margin-bottom: 0rem;
+}
+
+.footer-columns ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #3A4866;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #AAB4C4;
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 650px;
+    margin: 0 auto; 
+    gap: 1.5rem;
+  }
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    order: 2; 
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin: 1rem auto 0;
+  }
+  
+}
+
+/* Wrap columns properly at max-width 440px */
+@media (max-width: 320px) {
+  .footer-columns {
+    grid-template-columns: 1fr; /* One column per row */
+    text-align: center;
+  }
+
+  .footer-columns > div {
+    grid-column: span 1;
+  }
+
+  .footer-brand {
+    order: 2; /* Logo remains at the bottom */
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+}
