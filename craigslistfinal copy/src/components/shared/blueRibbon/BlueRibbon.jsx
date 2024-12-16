@@ -1,12 +1,12 @@
 import React from "react";
-import "./BlueRibbon.css"; // Updated styles
+import "./BlueRibbon.css";
 import { FaMapMarkerAlt, FaSearch } from "react-icons/fa";
 import plusIcon from "../../../assets/plus-icon.svg";
 
 const BlueRibbon = () => {
   return (
     <div className="blue-ribbon">
-      {/* Location Section */}
+      {/* Location */}
       <div className="location">
         <FaMapMarkerAlt className="icon" />
         <span>Set location</span>
@@ -22,9 +22,9 @@ const BlueRibbon = () => {
         <FaSearch className="search-icon" />
       </div>
 
-      {/* Post an Ad Button */}
+      {/* Post an Ad */}
       <div className="post-ad">
-      <img src={plusIcon} alt="Plus Icon" className="plus-icon" />
+        <img src={plusIcon} alt="Plus Icon" className="plus-icon" />
         <span className="post-ad-text">Post an ad</span>
       </div>
     </div>
