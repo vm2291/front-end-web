@@ -98,7 +98,7 @@ const TestingAPI = () => {
               <div className="result-card" key={index} onClick={() => window.open(item.url, "_blank")}>
                 <div className="result-image">
                   <img
-                    src={detailedData[index]?.image?.[0] || "https://via.placeholder.com/150"} // Use detailed image
+                    src={detailedData[index]?.image?.[0] || "https://via.placeholder.com/150"} 
                     alt={item.title}
                   />
                   <img src={saveIcon} className="save-icon" alt="Save" />
@@ -110,7 +110,6 @@ const TestingAPI = () => {
                 </div>
               </div>
             ))}
-            {/* Blank card with "See More" */}
             <div className="result-card see-more">
   <a
     href="https://newyork.craigslist.org/search/sss#search=1~gallery~0~0" 
