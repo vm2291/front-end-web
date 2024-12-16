@@ -32,6 +32,7 @@
     gap: 0.5rem;
     font-size: 1rem;
     margin-bottom: 5px;
+    margin-right: 50px;
 }
 
 /* Post an Ad Section */
@@ -41,6 +42,7 @@
     gap: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 .plus-icon {

@@ -1,4 +1,3 @@
-/* Sidebar Container */
 .sidebar {
     width: 250px;
     background-color: #ffffff;
@@ -92,4 +91,81 @@
   .sidebar-item:first-child:not(.selected) {
     color: #112757; /* Blue text for unselected */
   }
-  
+
+/* View All Categories Link */
+.view-all {
+    margin-top: 1rem;
+    color: #112757;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Fix "Today's Picks" Color Issue */
+.sidebar-item:first-child:not(.selected) {
+    color: #112757;
+}
+
+.sidebar-item:first-child img {
+    filter: none; /* Fix the blue icon issue */
+}
+
+/* Adjust Price Section */
+.filter-section.price-section {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price-inputs {
+    margin-top: 0.5rem;
+}
+
+/* Divider Fix for Categories */
+.categories hr {
+    margin-top: 0.5rem;
+}
+
+/* Responsive Sidebar: Toggle Button */
+.sidebar-toggle-btn {
+    display: none;
+    background-color: #6a2983;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar-toggle-btn:hover {
+    background-color: #5a226f;
+}
+
+/* Mobile Sidebar */
+@media (max-width: 770px) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 220px;
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        z-index: 999;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-toggle-btn {
+        display: block;
+        margin: 1rem;
+    }
+}

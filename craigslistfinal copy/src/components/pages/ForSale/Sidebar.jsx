@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 
-// Import category icons
 import antiques from "../../../assets/forSale/categories/antiques.svg";
 import appliances from "../../../assets/forSale/categories/appliances.svg";
 import bikes from "../../../assets/forSale/categories/bikes.svg";
@@ -14,8 +13,10 @@ import random from "../../../assets/forSale/categories/random.svg";
 
 const Sidebar = () => {
   const [selectedCategory, setSelectedCategory] = useState("Today's picks");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // List of categories
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
+
   const categories = [
     { name: "Today's picks", icon: random },
     { name: "Furniture", icon: furniture },
@@ -29,60 +30,66 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="sidebar">
-      {/* Filters Section */}
-      <div className="filters">
-        <h3>Filters</h3>
-        <hr />
-        {/* Price Input */}
-        <div className="filter-section">
-          <p>Price</p>
-          <div className="price-inputs">
-            <input type="number" placeholder="Min" />
-            <input type="number" placeholder="Max" />
+    <>
+      {/* Toggle Button for Mobile */}
+      <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
+        Filters & Categories
+      </button>
+
+      {/* Sidebar */}
+      <div className={`sidebar ${isSidebarOpen ? "active" : ""}`}>
+        <div className="filters">
+          <h3>Filters</h3>
+          <hr />
+          <div className="filter-section price-section">
+            <p>Price</p>
+            <div className="price-inputs">
+              <input type="number" placeholder="Min" />
+              <input type="number" placeholder="Max" />
+            </div>
           </div>
+
+          <div className="filter-section">
+            <p>Delivery method</p>
+            <span>&#9662;</span>
+          </div>
+
+          <div className="filter-section">
+            <p>Condition</p>
+            <span>&#9662;</span>
+          </div>
+
+          <div className="filter-section more-filters">
+            <p>More filters</p>
+          </div>
+          <hr />
         </div>
 
-        {/* Other Filter Options */}
-        <div className="filter-section">
-          <p>Delivery method</p>
-          <span>&#9662;</span>
+        <div className="categories">
+          <h3>Categories</h3>
+          <hr />
+          <ul className="sidebar-list">
+            {categories.map((category) => (
+              <li
+                key={category.name}
+                className={`sidebar-item ${
+                  selectedCategory === category.name ? "selected" : ""
+                }`}
+                onClick={() => setSelectedCategory(category.name)}
+              >
+                <img
+                  src={category.icon}
+                  alt={category.name}
+                  className="sidebar-icon"
+                />
+                <span>{category.name}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="view-all">View All Categories</div>
         </div>
-
-        <div className="filter-section">
-          <p>Condition</p>
-          <span>&#9662;</span>
-        </div>
-
-        <div className="filter-section more-filters">
-          <p>More filters</p>
-        </div>
-        <hr />
       </div>
-
-      {/* Categories Section */}
-      <div className="categories">
-        <h3>Categories</h3>
-        <ul className="sidebar-list">
-          {categories.map((category) => (
-            <li
-              key={category.name}
-              className={`sidebar-item ${
-                selectedCategory === category.name ? "selected" : ""
-              }`}
-              onClick={() => setSelectedCategory(category.name)}
-            >
-              <img
-                src={category.icon}
-                alt={category.name}
-                className="sidebar-icon"
-              />
-              <span>{category.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    </>
   );
 };
 
