@@ -37,7 +37,7 @@ const TestingAPI = () => {
 		'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        query: "appliances",
+        query: "furniture",
         gl: "newyork",
         hl: "en",
         has_pic: true,
