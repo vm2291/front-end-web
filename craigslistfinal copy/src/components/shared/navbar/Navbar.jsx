@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import logo from '../../../assets/home/navbar/logo.png'; // Import the logo
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Hook to get the current path
+
+  const getActiveClass = (path) => {
+    return location.pathname === path ? 'nav-item active' : 'nav-item';
+  };
 
   return (
     <nav className='navbar'>
@@ -16,13 +22,13 @@ const Navbar = () => {
 
         {/* Desktop nav items */}
         <div className='nav-links desktop-only'>
-          <Link to='/' className='nav-item active'>Home</Link>
-          <Link to='/for-sale' className='nav-item'>For Sale</Link>
-          <Link to='/housing' className='nav-item'>Housing</Link>
-          <Link to='/work' className='nav-item'>Work</Link>
-          <Link to='/forum' className='nav-item'>Forum</Link>
-          <Link to='/events' className='nav-item'>Events</Link>
-          <Link to='/community' className='nav-item'>Community</Link>
+          <Link to='/' className={getActiveClass('/')}>Home</Link>
+          <Link to='/for-sale' className={getActiveClass('/for-sale')}>For Sale</Link>
+          <Link to='/housing' className={getActiveClass('/housing')}>Housing</Link>
+          <Link to='/work' className={getActiveClass('/work')}>Work</Link>
+          <Link to='/forum' className={getActiveClass('/forum')}>Forum</Link>
+          <Link to='/events' className={getActiveClass('/events')}>Events</Link>
+          <Link to='/community' className={getActiveClass('/community')}>Community</Link>
         </div>
 
         {/* Desktop auth buttons */}
@@ -43,7 +49,6 @@ const Navbar = () => {
       <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
         <div className='mobile-menu-content'>
           <button className='close-menu' onClick={() => setIsMenuOpen(false)}>×</button>
-          
 
           <div className='mobile-auth'>
             <Link to='/signup' className='btn btn-signup'>Sign Up</Link>
@@ -51,13 +56,13 @@ const Navbar = () => {
           </div>
 
           <div className='mobile-nav-links'>
-            <Link to='/' className='nav-item active'>Home</Link>
-            <Link to='/for-sale' className='nav-item'>For Sale</Link>
-            <Link to='/housing' className='nav-item'>Housing</Link>
-            <Link to='/work' className='nav-item'>Work</Link>
-            <Link to='/forum' className='nav-item'>Forum</Link>
-            <Link to='/events' className='nav-item'>Events</Link>
-            <Link to='/community' className='nav-item'>Community</Link>
+            <Link to='/' className={getActiveClass('/')}>Home</Link>
+            <Link to='/for-sale' className={getActiveClass('/for-sale')}>For Sale</Link>
+            <Link to='/housing' className={getActiveClass('/housing')}>Housing</Link>
+            <Link to='/work' className={getActiveClass('/work')}>Work</Link>
+            <Link to='/forum' className={getActiveClass('/forum')}>Forum</Link>
+            <Link to='/events' className={getActiveClass('/events')}>Events</Link>
+            <Link to='/community' className={getActiveClass('/community')}>Community</Link>
           </div>
         </div>
       </div>
@@ -67,5 +72,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
