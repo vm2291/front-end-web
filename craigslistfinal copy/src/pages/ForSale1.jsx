@@ -12,7 +12,6 @@ const ForSale = () => {
         <Navbar />
       <BlueRibbon />
       <Sidebar/>
-      {/* Other components will go here */}
     </div>
   );
 };

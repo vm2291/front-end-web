@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import logo from '../../../assets/home/navbar/logo.png'; // Import the logo
+import logo from '../../../assets/home/navbar/logo.png'; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Hook to get the current path
+  const location = useLocation(); 
 
   const getActiveClass = (path) => {
     return location.pathname === path ? 'nav-item active' : 'nav-item';

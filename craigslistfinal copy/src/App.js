@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home1 from './pages/Home1';
 import ForSale1 from './pages/ForSale1'; // Import your For Sale page
-import './App.scss';
+import './App.css';
 
 const App = () => {
     return (
