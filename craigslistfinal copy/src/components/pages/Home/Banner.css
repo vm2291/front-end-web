@@ -225,7 +225,7 @@
   }
   
   .search-button {
-    width: auto; 
+    width: 100%; 
     padding: 14px;
     font-size: 0.875rem;
     background: #6F2983; 

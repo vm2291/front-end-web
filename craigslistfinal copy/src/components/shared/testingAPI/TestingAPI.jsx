@@ -12,7 +12,7 @@ const TestingAPI = () => {
     const options = {
       method: "GET",
       headers: {
- 		'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+ 		'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f38994',
 		'x-rapidapi-host': 'craigslist5.p.rapidapi.com'
       },
     };
@@ -32,7 +32,7 @@ const TestingAPI = () => {
     const options = {
       method: "POST",
       headers: {
-        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f38994',
         'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
         'Content-Type': 'application/json'      
       },
