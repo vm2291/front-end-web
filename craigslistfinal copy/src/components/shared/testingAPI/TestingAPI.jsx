@@ -12,18 +12,18 @@ const TestingAPI = () => {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "19022889ffmsh2d4af048f1787e1p1a636bjsn91823eee6d9",
-        "x-rapidapi-host": "craigslist5.p.rapidapi.com",
+ 		'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+		'x-rapidapi-host': 'craigslist5.p.rapidapi.com'
       },
     };
 
     try {
       const response = await fetch(`${detailsUrl}?url=${encodeURIComponent(url)}`, options);
       const result = await response.json();
-      return result; // Return the detailed data
+      return result; 
     } catch (error) {
       console.error("Error fetching detailed data:", error);
-      return null; // Return null on error
+      return null; 
     }
   };
 
@@ -32,12 +32,12 @@ const TestingAPI = () => {
     const options = {
       method: "POST",
       headers: {
-        "x-rapidapi-key": "745a2c2e16mshf8571b0dc46b9bdp151db4jsnf45f20204fd",
-        "x-rapidapi-host": "craigslist-data.p.rapidapi.com",
-        "Content-Type": "application/json",
+        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+        'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
+        'Content-Type': 'application/json'      
       },
       body: JSON.stringify({
-        query: "furniture",
+        query: "general",
         gl: "newyork",
         hl: "en",
         has_pic: true,
@@ -112,10 +112,16 @@ const TestingAPI = () => {
             ))}
             {/* Blank card with "See More" */}
             <div className="result-card see-more">
-              <div className="result-image">
-                <p>See More</p>
-              </div>
-            </div>
+  <a
+    href="https://newyork.craigslist.org/search/sss#search=1~gallery~0~0" 
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "none" }}
+  >
+    <p>See More</p>
+  </a>
+</div>
+
           </>
         )}
       </div>
