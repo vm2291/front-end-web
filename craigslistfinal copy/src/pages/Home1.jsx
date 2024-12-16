@@ -8,48 +8,48 @@ import Footer from "../components/shared/footer/Footer";
 
 
 const Home1 = () => {
-  const forSaleItems = [
+  const Housing = [
     {
       image: "https://via.placeholder.com/200",
-      title: "Luxury Apartment",
+      title: "Cozy Studio",
       location: "East Village",
-      price: "$3000 monthly",
+      price: "$3000/month",
     },
     {
       image: "https://via.placeholder.com/200",
       title: "Modern Condo",
       location: "Downtown",
-      price: "$4500 monthly",
+      price: "$4500/month",
     },
     {
       image: "https://via.placeholder.com/200",
-      title: "Cozy Studio",
+      title: "Luxury Apartment",
       location: "Brooklyn",
-      price: "$2500 monthly",
+      price: "$2500/month",
     },
     {
       image: "https://via.placeholder.com/200",
       title: "Spacious Loft",
       location: "Queens",
-      price: "$3500 monthly",
+      price: "$3500/month",
     },
     {
       image: "https://via.placeholder.com/200",
       title: "Penthouse Suite",
       location: "Manhattan",
-      price: "$7000 monthly",
+      price: "$7000/month",
     },
     {
       image: "https://via.placeholder.com/200",
       title: "Family Home",
       location: "Staten Island",
-      price: "$4000 monthly",
+      price: "$4000/month",
     },
     {
       image: "https://via.placeholder.com/200",
       title: "Modern Duplex",
       location: "Harlem",
-      price: "$5000 monthly",
+      price: "$5000/month",
     },
   ];
 
@@ -58,7 +58,7 @@ const Home1 = () => {
       image: "https://via.placeholder.com/200",
       title: "Music Festival",
       location: "Central Park",
-      date: "12-13 December",
+      date: "22-23 December",
     },
     {
       image: "https://via.placeholder.com/200",
@@ -106,7 +106,7 @@ const Home1 = () => {
       <TestingAPI/>
       <Section
         title="Housing"
-        items={forSaleItems}
+        items={Housing}
         seeMoreUrl="https://newyork.craigslist.org/search/sss#search=1~gallery~0~0"
       />
       <JobsSection />

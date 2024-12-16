@@ -9,7 +9,7 @@ import car from "../../../assets/forSale/categories/car.svg";
 import clothes from "../../../assets/forSale/categories/clothes.svg";
 import electronics from "../../../assets/forSale/categories/electronics.svg";
 import furniture from "../../../assets/forSale/categories/furniture.svg";
-import random from "../../../assets/forSale/categories/random.svg";
+import random2 from "../../../assets/forSale/categories/random2.svg";
 
 const Sidebar = () => {
   const [selectedCategory, setSelectedCategory] = useState("Today's picks");
@@ -19,7 +19,7 @@ const Sidebar = () => {
   const closeSidebar = () => setIsSidebarOpen(false);
 
   const categories = [
-    { name: "Today's picks", icon: random },
+    { name: "Today's picks", icon: random2 },
     { name: "Furniture", icon: furniture },
     { name: "Appliances", icon: appliances },
     { name: "Electronics", icon: electronics },
