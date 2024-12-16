@@ -17,7 +17,7 @@ const BlueRibbon = () => {
         <input
           type="text"
           placeholder="Search for items, jobs, events, etc"
-          className="search-input"
+          className="search-input-br"
         />
         <FaSearch className="search-icon" />
       </div>
