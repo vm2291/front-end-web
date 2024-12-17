@@ -137,10 +137,10 @@
   
 }
 
-/* Wrap columns properly at max-width 440px */
+
 @media (max-width: 320px) {
   .footer-columns {
-    grid-template-columns: 1fr; /* One column per row */
+    grid-template-columns: 1fr; 
     text-align: center;
   }
 
@@ -149,7 +149,7 @@
   }
 
   .footer-brand {
-    order: 2; /* Logo remains at the bottom */
+    order: 2; 
     text-align: center;
   }
 
