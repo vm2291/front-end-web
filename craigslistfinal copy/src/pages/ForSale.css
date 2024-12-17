@@ -1,0 +1,22 @@
+/*.for-sale-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; /* Ensure the page has enough height 
+    overflow-x: hidden; /* Prevent any accidental overflow 
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-content {
+    padding: 0rem;
+  }
+  */

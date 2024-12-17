@@ -1,17 +1,19 @@
-import React from 'react'; 
-import './ForSale.css'
-import BlueRibbon from '../components/shared/blueRibbon/BlueRibbon'
+import React, { useState } from "react";
+import "./ForSale.css";
+import BlueRibbon from "../components/shared/blueRibbon/BlueRibbon";
 import Navbar from "../components/shared/navbar/Navbar";
-import Sidebar from "../components/pages/ForSale/Sidebar"
-import Footer from "../components/shared/footer/Footer";
-
+import Sidebar from "../components/pages/ForSale/Sidebar";
+//import MainContent from "../components/pages/ForSale/MainContent"; 
 
 const ForSale = () => {
+  const [activeCategory, setActiveCategory] = useState("Today's picks");
+
   return (
     <div className="for-sale-page">
-        <Navbar />
+      <Navbar />
       <BlueRibbon />
-      <Sidebar/>
+      <Sidebar setActiveCategory={setActiveCategory} /> 
+      {activeCategory === "Today's picks" }
     </div>
   );
 };

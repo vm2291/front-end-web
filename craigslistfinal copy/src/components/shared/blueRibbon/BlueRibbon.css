@@ -9,9 +9,11 @@
     width: 100%;
     box-sizing: border-box;
     position: sticky;
-    top: 0;
-    z-index: 1000;
+    top: 0px;
+    z-index: 1100;
     flex-wrap: wrap; 
+    margin-top: 0;
+
 }
 
 .blue-ribbon-top {
@@ -23,7 +25,6 @@
     gap: 1rem;
 }
 
-/* Location Section */
 .location {
     display: flex;
     align-items: center;
