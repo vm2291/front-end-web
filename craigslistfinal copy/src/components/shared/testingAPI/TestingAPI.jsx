@@ -12,7 +12,7 @@ const TestingAPI = () => {
     const options = {
       method: "GET",
       headers: {
-        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+        'x-rapidapi-key': 'f318a59b60msha375bb728511bebp1d0fc9jsn53a4e0ac192c',
         'x-rapidapi-host': 'craigslist5.p.rapidapi.com'
       },
     };
@@ -32,12 +32,12 @@ const TestingAPI = () => {
     const options = {
       method: "POST",
       headers: {
-        'x-rapidapi-key': 'af54725380msh185d67ef1945cf3p1d83c9jsn7a49f3899485',
+        'x-rapidapi-key': 'f318a59b60msha375bb728511bebp1d0fc9jsn53a4e0ac192c',
         'x-rapidapi-host': 'craigslist-data.p.rapidapi.com',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        query: "furniture",
+        query: "appliances",
         gl: "newyork",
         hl: "en",
         has_pic: true,
