@@ -8,7 +8,7 @@ const Section = ({ title, items, seeMoreUrl }) => {
       <h2>{title}</h2>
       <div className="card-container">
         {items.map((item, index) => (
-          <div className="result-card" key={index}>
+          <div className="result-card-1" key={index}>
             <div className="result-image">
               <img
                 src={item.image || "https://via.placeholder.com/150"}

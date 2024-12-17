@@ -1,0 +1,90 @@
+.for-sale {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .for-sale h2 {
+    color: #1a2d69;
+    margin-bottom: 20px;
+  }
+  
+  .scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  
+  .items-container {
+    display: inline-flex;
+    gap: 20px;
+  }
+  .item-card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex: 0 0 auto;
+  }
+  
+  .item-image {
+    position: relative;
+    height: 150px;
+  }
+  
+  .item-image.placeholder {
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .save-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000; /* Black without background */
+    font-size: 20px;
+  }
+  
+  .item-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .item-details h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  
+  .item-details p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+  }
+  
+  .item-details .price {
+    font-size: 16px;
+    color: #1a2d69;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .see-more a {
+    text-decoration: none;
+    color: #1a2d69;
+    font-size: 16px;
+  }
+  
+  .see-more a:hover {
+    text-decoration: underline;
+  }
+  
